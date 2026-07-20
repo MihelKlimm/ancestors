@@ -53,3 +53,28 @@ See `CARRIERS.md`. Headline: no Grade-A cultural figure and no reigning dynasty 
 either line; strongest positive is two named 14th–15th c. Bosnian *knezovi*
 (Radojević/Mirković). Grade-B named recent carriers of the paternal line: Karađorđe
 Petrović and Živojin Mišić (Serbian DNA Project, not peer-reviewed).
+
+## Update: full modern-distribution synthesis (five research streams)
+
+The clinching evidence that a Y-haplogroup ≠ a language: **Gagauz (Turkic-speaking)
+carry I2a-Dinaric at ~23.6%; Sorbs (the Slavic-speaking minority in Germany) at
+~4.1%** (they are ~65% R1a). Added to the page's "Slavic" hedge.
+
+Frequency figures confirmed: Bosnian Croats 63.8–73.3% (global maximum, Peričić
+2005/Battaglia 2008), Serbia ~36.6% pooled (Kačar 2019 — the circulating "3.63%"
+is a misread of the terminal-SNP residue, NOT the clade total), Bulgaria 21.9%
+M423 (Karachanak 2013), E. Romania 40.7% M423 (Varzari 2013), Poland 9.5% I-Y3120
+(2025 NGS — the only direct sub-CTS10228 population figure in E. Europe), Ukraine
+Bukovina >~30% (the East Slavic peak). Most studies type the broader P37.2, a valid
+CTS10228 proxy in E. Europe (M26 is ~0–1% there) but a proxy nonetheless.
+
+U5b: Sami U5b1b1 = 47.6% pooled (Tambets 2004) but huge spread — Norwegian Sami
+56.8%, Swedish Sami 26.5% (a V population). **Correction absorbed:** Basques have
+elevated U5b broadly (~15% Guipuzcoa) but ~0% U5b1b1 — a different sub-branch from
+the Sami peak; and the Sami–Berber link (Achilli 2005) is a sister-branch on a
+handful of genomes, not a population-frequency phenomenon.
+
+Not retrieved: exact Belarus/Russia national % (Kushniarevich 2015 Supp. Table K);
+no Y-DNA breakout exists for Hutsuls/Boykos/Lemkos (the cited Carpathian study is
+mtDNA — do not conflate mt-hg-I with Y-hg-I). Costume/architecture micro-detail is
+ethnographic consensus, not re-sourced per claim; no museum reference photos captured.
