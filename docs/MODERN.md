@@ -78,3 +78,21 @@ Not retrieved: exact Belarus/Russia national % (Kushniarevich 2015 Supp. Table K
 no Y-DNA breakout exists for Hutsuls/Boykos/Lemkos (the cited Carpathian study is
 mtDNA — do not conflate mt-hg-I with Y-hg-I). Costume/architecture micro-detail is
 ethnographic consensus, not re-sourced per claim; no museum reference photos captured.
+
+## Primary citation for the M423-direct figures (Romania/Moldova/Ukraine)
+
+**Varzari et al. 2013, PLoS ONE 8(1):e53731 is the only population study that typed
+I-M423 directly** (resolved M170/P37.2/M253/M26/M423/M223, so M26 "Sardinian" is
+stripped out → a clean CTS10228 proxy for SE Europe):
+- Eastern Romania: 40.7% (22/54)
+- Moldova, north (Sofia): 25.9% (14/54); SE (Karahasani): 16.9% (12/71); combined 20.8% (26/125)
+- Ukrainians, Rashkov/Transnistria: 20.8% (11/53)
+
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0053731
+
+Everything else in the region is P37-based (Rootsi 2004: Romanian national 17.7%,
+n=361 — the defensible national figure; Gagauz 24.1%; Moldavian 21.7%). The P37 vs
+M423 distinction is why regional figures must not be lined up as identical.
+**Takeaway: region drives more variance than marker** — E. Romania 40.7% (M423, small
+regional n) vs national 17.7% (P37, large n). Not retrieved (search budget exhausted):
+Bosch 2006 Aromanians, Martínez-Cruz 2012 per-county Transylvania-vs-Wallachia table.
