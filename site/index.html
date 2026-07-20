@@ -5,368 +5,657 @@
 <meta name="robots" content="noindex, nofollow, noarchive">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Two Ice Age Lines — mtDNA U5b &amp; Y-DNA I2a1b</title>
-</head>
-<body>
-
 <style>
   :root{
-    --ochre:#B4531F;
-    --ochre-lift:#D2703A;
-    --glacier:#7C97A6;
-    --umber:#6B4E33;
-    --moss:#5C6B4C;
-
-    --ground:#EDE4D4;
-    --ground-2:#E3D8C4;
-    --ink:#221B14;
-    --ink-2:#5A4B3C;
-    --ink-3:#8A7A66;
-    --rule:#C9BAA2;
-    --plate:#F6EFE2;
-    --shadow:rgba(34,27,20,.10);
+    --ochre:#B4531F; --ochre-lift:#D2703A; --glacier:#7C97A6; --umber:#6B4E33; --pine:#4A5D46;
+    --ground:#EDE4D4; --ground-2:#E3D8C4; --ink:#221B14; --ink-2:#5A4B3C;
+    --ink-3:#8A7A66; --rule:#C9BAA2; --plate:#F6EFE2; --shadow:rgba(34,27,20,.10);
   }
   @media (prefers-color-scheme:dark){
     :root{
-      --ground:#17130F;
-      --ground-2:#1F1A15;
-      --ink:#EDE4D4;
-      --ink-2:#BCAB93;
-      --ink-3:#8A7A66;
-      --rule:#3A3128;
-      --plate:#1C1712;
-      --shadow:rgba(0,0,0,.45);
-      --ochre:#D2703A;
-      --ochre-lift:#E58A52;
-      --glacier:#8FA9B8;
+      --ground:#17130F; --ground-2:#1F1A15; --ink:#EDE4D4; --ink-2:#BCAB93;
+      --ink-3:#8A7A66; --rule:#3A3128; --plate:#1C1712; --shadow:rgba(0,0,0,.45);
+      --ochre:#D2703A; --ochre-lift:#E58A52; --glacier:#8FA9B8; --pine:#7E9478;
     }
   }
   :root[data-theme="dark"]{
     --ground:#17130F; --ground-2:#1F1A15; --ink:#EDE4D4; --ink-2:#BCAB93;
     --ink-3:#8A7A66; --rule:#3A3128; --plate:#1C1712; --shadow:rgba(0,0,0,.45);
-    --ochre:#D2703A; --ochre-lift:#E58A52; --glacier:#8FA9B8;
+    --ochre:#D2703A; --ochre-lift:#E58A52; --glacier:#8FA9B8; --pine:#7E9478;
   }
   :root[data-theme="light"]{
     --ground:#EDE4D4; --ground-2:#E3D8C4; --ink:#221B14; --ink-2:#5A4B3C;
     --ink-3:#8A7A66; --rule:#C9BAA2; --plate:#F6EFE2; --shadow:rgba(34,27,20,.10);
-    --ochre:#B4531F; --ochre-lift:#D2703A; --glacier:#7C97A6;
+    --ochre:#B4531F; --ochre-lift:#D2703A; --glacier:#7C97A6; --pine:#4A5D46;
   }
-
   *{box-sizing:border-box}
-  body{
-    margin:0;
-    background:var(--ground);
-    color:var(--ink);
+  body{margin:0;background:var(--ground);color:var(--ink);
     font-family:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif;
-    font-size:17px;
-    line-height:1.62;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:1080px;margin:0 auto;padding:clamp(28px,5vw,72px) clamp(18px,4vw,40px) 80px}
-  .lab{
-    font-family:ui-sans-serif,-apple-system,'Segoe UI',Roboto,sans-serif;
-    font-size:11px;letter-spacing:.16em;text-transform:uppercase;
-    color:var(--ink-3);font-weight:600;
-  }
-  h1{
-    font-size:clamp(2.1rem,5.2vw,3.5rem);line-height:1.06;margin:.3em 0 .2em;
-    font-weight:400;letter-spacing:-.015em;text-wrap:balance;
-  }
-  h2{
-    font-size:clamp(1.35rem,2.6vw,1.85rem);font-weight:400;line-height:1.2;
-    margin:0 0 .5em;text-wrap:balance;letter-spacing:-.01em;
-  }
-  h3{font-size:1.06rem;font-weight:600;margin:0 0 .35em;letter-spacing:-.005em}
+    font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:clamp(28px,5vw,72px) clamp(18px,4vw,40px) 90px}
+  .lab{font-family:ui-sans-serif,-apple-system,'Segoe UI',Roboto,sans-serif;
+    font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+  h1{font-size:clamp(2.1rem,5.2vw,3.5rem);line-height:1.06;margin:.3em 0 .2em;font-weight:400;letter-spacing:-.015em}
+  h2{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:400;line-height:1.15;margin:0 0 .4em;letter-spacing:-.012em}
+  h3{font-size:1.14rem;font-weight:600;margin:0 0 .4em;letter-spacing:-.005em}
   p{margin:0 0 1em;max-width:66ch}
-  a{color:var(--ochre)}
   strong{font-weight:600}
-  hr.rule{border:0;border-top:1px solid var(--rule);margin:0}
+  a{color:var(--ochre)}
+  header.plate{border-top:3px solid var(--ochre);padding-top:18px;margin-bottom:8px}
+  .sub{color:var(--ink-2);font-size:1.06rem;max-width:62ch;margin-top:.4em}
 
-  /* ---- masthead ---- */
-  header.plate{border-top:3px solid var(--ochre);padding-top:18px;margin-bottom:36px}
-  .sub{color:var(--ink-2);font-size:1.06rem;max-width:60ch;margin-top:.4em}
+  .sec{margin-top:76px;scroll-margin-top:20px}
+  .sec-head{border-top:1px solid var(--rule);padding-top:14px;margin-bottom:26px}
+  .sec-num{font-family:ui-sans-serif,sans-serif;font-size:12px;letter-spacing:.14em;color:var(--ochre);font-weight:700}
 
-  /* ---- the two lines ---- */
-  .lines{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin:34px 0 8px}
-  .line{
-    background:var(--plate);border:1px solid var(--rule);padding:22px 22px 20px;
-    position:relative;box-shadow:0 1px 0 var(--shadow);
-  }
+  .lines{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin:30px 0 8px}
+  .line{background:var(--plate);border:1px solid var(--rule);padding:22px 22px 20px;position:relative}
   .line::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--c)}
   .line .hg{font-size:2.5rem;line-height:1;letter-spacing:-.02em;margin:.18em 0 .1em;color:var(--c)}
   .line .desc{font-size:.95rem;color:var(--ink-2);margin:0}
-  .conf{
-    display:inline-block;margin-top:12px;font-family:ui-sans-serif,-apple-system,sans-serif;
-    font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;
-    padding:3px 9px;border:1px solid var(--rule);color:var(--ink-2);
-  }
+  .conf{display:inline-block;margin-top:12px;font-family:ui-sans-serif,sans-serif;font-size:10.5px;
+    letter-spacing:.1em;text-transform:uppercase;font-weight:600;padding:3px 9px;border:1px solid var(--rule);color:var(--ink-2)}
 
-  /* ---- map ---- */
-  .mapwrap{margin:44px 0 10px;background:var(--plate);border:1px solid var(--rule);padding:10px}
+  .mapwrap{margin:34px 0 10px;background:var(--plate);border:1px solid var(--rule);padding:10px}
   .mapscroll{overflow-x:auto}
   svg.map{display:block;width:100%;height:auto;min-width:640px}
   figcaption{font-size:.85rem;color:var(--ink-3);margin:12px 4px 4px;max-width:74ch}
-
-  .legend{display:flex;flex-wrap:wrap;gap:16px 26px;margin:16px 4px 6px;font-size:.85rem;color:var(--ink-2)}
+  .legend{display:flex;flex-wrap:wrap;gap:14px 24px;margin:16px 4px 6px;font-size:.85rem;color:var(--ink-2)}
   .legend span{display:flex;align-items:center;gap:8px}
   .sw{width:22px;height:0;border-top-width:3px;border-top-style:solid;flex:none}
   .swb{width:13px;height:13px;flex:none;border:1px solid var(--rule)}
 
-  /* ---- carriers ---- */
-  .carriers{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:20px;margin-top:26px}
-  .carrier{background:var(--plate);border:1px solid var(--rule);padding:18px}
-  .carrier svg{display:block;width:100%;height:auto;margin-bottom:14px}
-  .carrier .who{font-size:1.12rem;margin:0 0 2px;letter-spacing:-.01em}
-  .carrier .when{font-size:.8rem;color:var(--ink-3);margin:0 0 9px;font-variant-numeric:tabular-nums}
-  .carrier .hgs{font-family:ui-sans-serif,-apple-system,sans-serif;font-size:11.5px;margin:0 0 9px;letter-spacing:.02em}
-  .carrier .hgs b{font-weight:600}
-  .match{color:var(--ochre)}
-  .nomatch{color:var(--ink-3)}
-  .carrier .note{font-size:.86rem;color:var(--ink-2);margin:0;line-height:1.5}
+  .figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px;margin-top:24px}
+  .fig{background:var(--plate);border:1px solid var(--rule);overflow:hidden;display:flex;flex-direction:column}
+  .fig .ph{aspect-ratio:1/1;overflow:hidden;background:var(--ground-2);border-bottom:1px solid var(--rule)}
+  .fig .ph img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.92)}
+  .fig .bd{padding:15px 16px 16px}
+  .fig .who{font-size:1.1rem;margin:0 0 1px;letter-spacing:-.01em}
+  .fig .when{font-size:.78rem;color:var(--ink-3);margin:0 0 8px}
+  .fig .hgs{font-family:ui-sans-serif,sans-serif;font-size:11px;margin:0 0 8px}
+  .fig .hgs b{font-weight:600}
+  .match{color:var(--ochre)} .nomatch{color:var(--ink-3)}
+  .fig .note{font-size:.85rem;color:var(--ink-2);margin:0 0 8px;line-height:1.48}
+  .fig .cred{font-size:.7rem;color:var(--ink-3);margin:0;line-height:1.4}
+  .fig .cred a{color:var(--ink-3)}
 
-  /* ---- evidence ---- */
-  section{margin-top:58px}
-  .tblwrap{overflow-x:auto;border:1px solid var(--rule);background:var(--plate)}
+  .grade{display:inline-block;width:1.35em;height:1.35em;line-height:1.35em;text-align:center;border-radius:50%;
+    font-family:ui-sans-serif,sans-serif;font-size:.72rem;font-weight:700;color:#fff;vertical-align:middle}
+  .gA{background:#5C7A4A} .gB{background:#B0862F} .gC{background:#9A5433}
+  .gradekey{display:flex;flex-wrap:wrap;gap:10px 20px;font-size:.82rem;color:var(--ink-2);margin:6px 0 22px}
+  .gradekey span{display:flex;align-items:center;gap:7px}
+
+  .tblwrap{overflow-x:auto;border:1px solid var(--rule);background:var(--plate);margin:6px 0}
   table{border-collapse:collapse;width:100%;min-width:560px;font-size:.88rem}
-  th,td{padding:9px 14px;text-align:left;border-bottom:1px solid var(--rule)}
-  th{
-    font-family:ui-sans-serif,-apple-system,sans-serif;font-size:10.5px;letter-spacing:.11em;
-    text-transform:uppercase;color:var(--ink-3);font-weight:600;background:var(--ground-2);
-  }
+  th,td{padding:9px 14px;text-align:left;border-bottom:1px solid var(--rule);vertical-align:top}
+  th{font-family:ui-sans-serif,sans-serif;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-3);font-weight:600;background:var(--ground-2)}
   tbody tr:last-child td{border-bottom:0}
-  td.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.83rem;font-variant-numeric:tabular-nums}
-  .drv{color:var(--ochre);font-weight:600}
-  .anc{color:var(--ink-3)}
+  td.mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.82rem;font-variant-numeric:tabular-nums}
+  .drv{color:var(--ochre);font-weight:600} .anc{color:var(--ink-3)}
 
   .caveat{border-left:3px solid var(--glacier);padding:2px 0 2px 18px;margin:22px 0}
   .caveat p{color:var(--ink-2);font-size:.95rem}
+  .imagined{border:1px dashed var(--ochre-lift);background:var(--plate);padding:20px 22px;margin:24px 0;position:relative}
+  .imagined::before{content:"IMAGINED · NOT YOUR GENEALOGY";position:absolute;top:-9px;left:16px;background:var(--ground);
+    padding:0 8px;font-family:ui-sans-serif,sans-serif;font-size:10px;letter-spacing:.14em;color:var(--ochre);font-weight:700}
+  .imagined p:last-child{margin-bottom:0}
+  .imagined .em{font-style:italic;color:var(--ink)}
 
-  footer{margin-top:62px;padding-top:20px;border-top:1px solid var(--rule);font-size:.84rem;color:var(--ink-3)}
-  footer p{max-width:74ch}
+  .freq{margin:8px 0 4px}
+  .freq .row{display:grid;grid-template-columns:150px 1fr 52px;align-items:center;gap:12px;margin:5px 0;font-size:.88rem}
+  .freq .bar{height:16px;background:var(--ground-2);border:1px solid var(--rule);position:relative;overflow:hidden}
+  .freq .fill{position:absolute;inset:0 auto 0 0;background:var(--c,var(--glacier))}
+  .freq .pct{font-variant-numeric:tabular-nums;color:var(--ink-2);text-align:right}
+  .freq .nm{color:var(--ink)}
+
+  .cult{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;margin-top:24px}
+  .cult .col{background:var(--plate);border:1px solid var(--rule);padding:22px}
+  .cult .col::before{content:"";display:block;height:4px;width:44px;background:var(--c);margin-bottom:14px}
+  .cult svg{display:block;width:100%;height:auto;background:var(--ground-2);border:1px solid var(--rule);margin:14px 0}
+  .cult .lng{font-family:ui-sans-serif,sans-serif;font-size:.8rem;color:var(--ink-2);margin:0 0 10px}
+  .cult .lng b{color:var(--ink)}
+  .obj{display:flex;gap:14px;align-items:flex-start;margin-top:4px}
+  .obj svg{flex:none;width:88px;height:88px;margin:0}
+  .obj p{font-size:.86rem;margin:0}
+
+  footer{margin-top:72px;padding-top:20px;border-top:1px solid var(--rule);font-size:.83rem;color:var(--ink-3)}
+  footer p{max-width:76ch}
+  .toc{display:flex;flex-wrap:wrap;gap:6px 8px;margin:26px 0 0;font-family:ui-sans-serif,sans-serif;font-size:.8rem}
+  .toc a{text-decoration:none;color:var(--ink-2);border:1px solid var(--rule);padding:4px 11px;background:var(--plate)}
+  .toc a:hover{border-color:var(--ochre);color:var(--ochre)}
 
   @media (prefers-reduced-motion:no-preference){
     .route{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:draw 2.1s ease-out forwards}
-    .route.d2{animation-delay:.45s}
+    .route.d2{animation-delay:.4s}
     @keyframes draw{to{stroke-dashoffset:0}}
   }
 </style>
-
+</head>
+<body>
 <div class="wrap">
 
   <header class="plate">
-    <div class="lab">Genotype 5111-0879 &middot; 579,517 markers &middot; read 20 July 2026</div>
+    <div class="lab">Genotype 5111-0879 · 579,517 markers · read 20 July 2026</div>
     <h1>Two lines out of the Ice Age</h1>
-    <p class="sub">
-      Your direct maternal and paternal lines both trace to the Western Hunter&#8209;Gatherers &mdash;
-      the people who lived in Europe <em>before</em> farming arrived. Not a country breakdown.
-      Two specific lineages, each with a place and a date.
-    </p>
+    <p class="sub">Your direct maternal and paternal lines both trace to the Western Hunter-Gatherers —
+      Europe's people <em>before</em> farming. This page follows them from the glacial refuges to the
+      present day: where they went, who documentably shares them, and where their nearest living
+      relatives are now.</p>
+    <nav class="toc">
+      <a href="#deep">Deep time</a>
+      <a href="#middle">The last 2,000 years</a>
+      <a href="#nobles">Aristocrats?</a>
+      <a href="#culture">Great minds?</a>
+      <a href="#now">The last 100 years</a>
+      <a href="#honest">What this is not</a>
+    </nav>
   </header>
 
   <div class="lines">
     <div class="line" style="--c:var(--ochre)">
-      <div class="lab">Maternal line &middot; mitochondrial DNA</div>
+      <div class="lab">Maternal line · mitochondrial DNA</div>
       <div class="hg">U5b</div>
-      <p class="desc">
-        Mother &rarr; her mother &rarr; her mother, unbroken. Haplogroup U5 arose in Europe roughly
-        30,000&ndash;35,000 years ago and is the signature lineage of the European Mesolithic.
-      </p>
-      <span class="conf">7 derived, 4 excluding markers &middot; high confidence</span>
+      <p class="desc">Mother → her mother → her mother, unbroken. U5 arose in Europe ~30,000–35,000 years
+        ago — the signature lineage of the European Mesolithic.</p>
+      <span class="conf">7 derived, 4 excluding markers · high confidence</span>
     </div>
     <div class="line" style="--c:var(--glacier)">
-      <div class="lab">Paternal line &middot; Y chromosome</div>
+      <div class="lab">Paternal line · Y chromosome</div>
       <div class="hg">I2a1b</div>
-      <p class="desc">
-        Father &rarr; his father &rarr; his father, unbroken. <b>I&#8209;M423</b>. Haplogroup I is the one major lineage
-        that appears to have <em>originated in Europe</em>; M423 peaks today in the Dinaric Alps and runs
-        straight through the Slavic world.
-      </p>
-      <span class="conf">Resolved on the full ISOGG tree &middot; M223 excluded</span>
+      <p class="desc">Father → his father → his father, unbroken. <b>I-M423</b>. Haplogroup I is the one
+        major lineage that appears to have <em>originated in Europe</em>.</p>
+      <span class="conf">Called on the full ISOGG tree · M223 branch excluded</span>
     </div>
   </div>
 
-  <figure class="mapwrap">
-    <div class="mapscroll"><svg class="map" id="map" viewBox="0 0 1000 660" role="img"
-      aria-label="Schematic map of Europe showing Last Glacial Maximum ice, Ice Age refuges, and the routes of haplogroups U5b and I2a1b-M423."></svg></div>
-    <div class="legend">
-      <span><i class="sw" style="border-top-color:var(--ochre)"></i>Maternal U5b</span>
-      <span><i class="sw" style="border-top-color:var(--glacier)"></i>Paternal I2a1b-M423</span>
-      <span><i class="swb" style="background:#B9C9D2"></i>Ice sheet, 21,000 BC</span>
-      <span><i class="swb" style="background:rgba(180,83,31,.17)"></i>Ice Age refuge</span>
-    </div>
-    <figcaption>
-      Sites are plotted at true coordinates; the coastline is schematic and shows the modern shore.
-      At the glacial maximum the sea was some 120&nbsp;m lower &mdash; Britain was joined to the continent
-      by <em>Doggerland</em>, now under the North Sea, and both lines would have walked across it.
-    </figcaption>
-  </figure>
+  <!-- ============ 1 · DEEP TIME ============ -->
+  <section class="sec" id="deep">
+    <div class="sec-head"><span class="sec-num">01 · DEEP TIME</span></div>
+    <h2>Out of the refuges</h2>
+    <p>At the height of the last Ice Age, ~21,000 years ago, Europe's hunter-gatherers were pressed into
+      a handful of southern refuges. As the ice pulled back, they walked north again — and your two lines
+      are branches of that recolonisation. The sea was ~120 m lower; Britain was joined to the continent by
+      <em>Doggerland</em>, now under the North Sea.</p>
 
-  <section>
-    <div class="lab">Documented carriers</div>
-    <h2>People who share these lines</h2>
-    <p>
-      These are not distant statistical cousins &mdash; they are sequenced individuals published in the
-      scientific literature who carry the same haplogroups. The first is the striking one:
-      <strong>Cheddar Man matches on both lines at once.</strong>
-    </p>
-    <div class="carriers" id="carriers"></div>
+    <figure class="mapwrap">
+      <div class="mapscroll"><svg class="map" id="map" viewBox="0 0 1000 660" role="img"
+        aria-label="Schematic map of Europe showing Last Glacial Maximum ice, Ice Age refuges, and the routes of haplogroups U5b and I2a1b-M423."></svg></div>
+      <div class="legend">
+        <span><i class="sw" style="border-top-color:var(--ochre)"></i>Maternal U5b</span>
+        <span><i class="sw" style="border-top-color:var(--glacier)"></i>Paternal I2a1b-M423</span>
+        <span><i class="swb" style="background:#B9C9D2"></i>Ice sheet, 21,000 BC</span>
+        <span><i class="swb" style="background:rgba(180,83,31,.17)"></i>Ice Age refuge</span>
+      </div>
+      <figcaption>Sites plotted at true coordinates; coastline schematic (modern shore). The paternal
+        arrows east of the Balkans mark where I-M423 later broadcast — see §2; that spread is
+        early-medieval, not Ice Age.</figcaption>
+    </figure>
+
+    <h3 style="margin-top:34px">People who share these lines — from the ground</h3>
+    <p>Not statistical cousins: sequenced individuals in the scientific literature carrying the same
+      haplogroups. Photographs are of the actual remains, freely licensed from Wikimedia.
+      <strong>Cheddar Man and Loschbour man each carry a line of yours</strong> — Loschbour carries both —
+      because these are Western Hunter-Gatherer lineages.</p>
+
+    <div class="figs">
+      <div class="fig">
+        <div class="ph"><img src="cheddar-skull.jpg" alt="The skull of Cheddar Man" loading="lazy"></div>
+        <div class="bd">
+          <p class="who">Cheddar Man</p>
+          <p class="when">c. 7100 BC · Somerset, England</p>
+          <p class="hgs"><b>mt</b> <span class="match">U5b1</span>&nbsp;&nbsp;<b>Y</b> <span class="match">I2a</span></p>
+          <p class="note">Britain's oldest complete skeleton. The 2018 sequencing found dark skin, blue
+            eyes — and both of your haplogroups.</p>
+          <p class="cred">Skull photo © geni, <a href="https://commons.wikimedia.org/wiki/File:Cheddar_man_skull.jpg">CC BY-SA 4.0</a> · <a href="https://en.wikipedia.org/wiki/Cheddar_Man">Wikipedia</a></p>
+        </div>
+      </div>
+      <div class="fig">
+        <div class="ph"><img src="loschbour.jpg" alt="The remains of Loschbour man" loading="lazy"></div>
+        <div class="bd">
+          <p class="who">Loschbour man</p>
+          <p class="when">c. 6000 BC · Luxembourg</p>
+          <p class="hgs"><b>mt</b> <span class="match">U5b1a</span>&nbsp;&nbsp;<b>Y</b> <span class="match">I2a-M423</span></p>
+          <p class="note">The closest match of all: he carries <em>both</em> your maternal U5b and your
+            paternal M423, in one 8,000-year-old man.</p>
+          <p class="cred">Photo: Tom Lucas, © MNAHA, <a href="https://commons.wikimedia.org/wiki/File:Luxembourg,_MNAHA_59652,_Loschbour.jpg">CC0</a> · <a href="https://en.wikipedia.org/wiki/Loschbour_man">Wikipedia</a></p>
+        </div>
+      </div>
+      <div class="fig">
+        <div class="ph"><img src="djehutynakht-head.jpg" alt="The head of the mummy of Djehutynakht" loading="lazy"></div>
+        <div class="bd">
+          <p class="who">Djehutynakht</p>
+          <p class="when">c. 2000 BC · Deir el-Bersha, Egypt</p>
+          <p class="hgs"><b>mt</b> <span class="match">U5b2b5</span>&nbsp;&nbsp;<b>Y</b> <span class="nomatch">—</span></p>
+          <p class="note">An Egyptian governor's mummy on a European hunter-gatherer maternal line — a
+            reminder these lineages travelled. <em>(The authors flagged possible contamination.)</em></p>
+          <p class="cred">Photo © Marcus Cyron, <a href="https://commons.wikimedia.org/wiki/File:Head_of_the_Mummy_of_Djehutynakht.jpg">CC BY 3.0</a> · <a href="https://en.wikipedia.org/wiki/Djehutynakht_(10A)">Wikipedia</a></p>
+        </div>
+      </div>
+      <div class="fig">
+        <div class="ph"><svg viewBox="0 0 200 200" aria-hidden="true" style="width:100%;height:100%;display:block">
+          <rect width="200" height="200" fill="var(--ground-2)"/>
+          <ellipse cx="100" cy="96" rx="42" ry="52" fill="#6F4E3B"/>
+          <path d="M58 82 q-6 -46 42 -49 q48 3 42 49 q-11 -28 -42 -28 q-31 0 -42 28z" fill="rgba(20,14,10,.72)"/>
+          <ellipse cx="84" cy="96" rx="6.5" ry="4.6" fill="#F3EADB"/><ellipse cx="116" cy="96" rx="6.5" ry="4.6" fill="#F3EADB"/>
+          <circle cx="84" cy="96" r="3.3" fill="#4E7C92"/><circle cx="116" cy="96" r="3.3" fill="#4E7C92"/>
+          <path d="M100 101 l-6 15 q6 4 12 0z" fill="rgba(0,0,0,.2)"/>
+          <path d="M88 128 q12 6 24 0" stroke="rgba(0,0,0,.34)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+          <path d="M60 66 q40 -12 80 0" stroke="var(--ochre)" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </svg></div>
+        <div class="bd">
+          <p class="who">La Braña 1</p>
+          <p class="when">c. 5000 BC · León, Spain</p>
+          <p class="hgs"><b>mt</b> <span class="match">U5b2c1</span>&nbsp;&nbsp;<b>Y</b> <span class="nomatch">C1a2</span></p>
+          <p class="note">The genome that first revealed the hunter-gatherer combination of dark skin
+            and blue eyes. <em>No free photograph exists — this is an illustration.</em></p>
+          <p class="cred">Drawing (this project) · <a href="https://en.wikipedia.org/wiki/La_Braña_1">Wikipedia</a></p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <div class="lab">The evidence</div>
-    <h2>Every marker I actually read</h2>
-    <p>
-      So you can check the work. Mitochondrial positions use standard rCRS numbering; the
-      <em>derived</em> state is the mutation that defines the branch.
-    </p>
+  <!-- ============ 2 · LAST 2000 YEARS ============ -->
+  <section class="sec" id="middle">
+    <div class="sec-head"><span class="sec-num">02 · THE LAST 2,000 YEARS</span></div>
+    <h2>Where the lines went</h2>
+    <p>The two lines have very different recent histories, and it is worth keeping them apart.</p>
+    <p><strong>The paternal line, I-M423, has a dramatic last two millennia.</strong> Its "Dinaric"
+      sub-branch (I-CTS10228) has a young founder — its explosive radiation node dates to roughly
+      <strong>2,200 years ago, the Iron Age</strong>, and it is essentially <em>absent</em> from ancient
+      remains until the Early Middle Ages, then appears suddenly across Eastern and Southeastern Europe. That
+      broadcast lines up with the <strong>medieval Slavic migrations</strong> of the 6th–9th centuries — a
+      genuinely large movement that ancient DNA now confirms replaced more than 80% of the local gene pool
+      in parts of Central Europe and the Balkans. It turns up in the 10th-century Hungarian Conqueror elite
+      (as I-L621) and in Viking-age burials at Chernihiv, Gotland and Kraków.</p>
+    <div class="caveat"><p><strong>An honest hedge on the word "Slavic."</strong> That the lineage
+      <em>spread</em> with early-medieval migrations is well demonstrated. Whether I-CTS10228 is a "Slavic
+      ethnic marker" is <em>contested</em>: its founder predates the Slavs by centuries, and some scholars
+      read the South-Slavic peak as a pre-Slavic Balkan population that the incoming Slavs absorbed, rather
+      than a signal the Slavs brought with them. A single Y-line is a poor proxy for an ethnicity. So: your
+      paternal branch is deeply tied to this Eastern/Southeastern European world — but the neat story
+      "your fathers were Slavs" is an inference, not a settled fact.</p></div>
+    <p><strong>The maternal line, U5b, is older and quieter.</strong> It never had a single expansion event
+      like that; it has persisted in Europe since the Mesolithic, thinned and overlaid by later farmer and
+      steppe migrations, surviving best at the continent's edges (see §5).</p>
 
-    <h3 style="margin-top:26px">Maternal &mdash; how U5b was reached</h3>
-    <div class="tblwrap">
-      <table>
-        <thead><tr><th>Position</th><th>rCRS</th><th>Your call</th><th>State</th><th>What it establishes</th></tr></thead>
-        <tbody>
-          <tr><td class="mono">12308</td><td class="mono">A</td><td class="mono">G</td><td class="drv">derived</td><td>Haplogroup <b>U</b></td></tr>
-          <tr><td class="mono">12372</td><td class="mono">G</td><td class="mono">A</td><td class="drv">derived</td><td>Haplogroup <b>U</b>, confirming</td></tr>
-          <tr><td class="mono">11467</td><td class="mono">A</td><td class="mono">G</td><td class="drv">derived</td><td>Haplogroup <b>U</b>, third marker</td></tr>
-          <tr><td class="mono">3197</td><td class="mono">T</td><td class="mono">C</td><td class="drv">derived</td><td>Subclade <b>U5</b></td></tr>
-          <tr><td class="mono">9477</td><td class="mono">G</td><td class="mono">A</td><td class="drv">derived</td><td>Subclade <b>U5</b>, confirming</td></tr>
-          <tr><td class="mono">13617</td><td class="mono">T</td><td class="mono">C</td><td class="drv">derived</td><td>Subclade <b>U5</b>, third marker</td></tr>
-          <tr><td class="mono">14182</td><td class="mono">T</td><td class="mono">C</td><td class="drv">derived</td><td>Branch <b>U5b</b></td></tr>
-          <tr><td class="mono">10398</td><td class="mono">A</td><td class="mono">A</td><td class="anc">ancestral</td><td>Excludes K, J, I</td></tr>
-          <tr><td class="mono">15907</td><td class="mono">A</td><td class="mono">A</td><td class="anc">ancestral</td><td>Excludes U2</td></tr>
-          <tr><td class="mono">15693</td><td class="mono">T</td><td class="mono">T</td><td class="anc">ancestral</td><td>Excludes U4</td></tr>
-          <tr><td class="mono">16126</td><td class="mono">T</td><td class="mono">T</td><td class="anc">ancestral</td><td>Excludes the JT clade</td></tr>
-        </tbody>
-      </table>
+    <h3 style="margin-top:34px">Documented carriers of the last two millennia</h3>
+    <p>Here honesty has to lead. A shared haplogroup makes someone a <em>relative on one line</em> — a
+      shared ancestor, usually many centuries back — <strong>not your ancestor</strong>. And when you ask
+      the records for <em>named, documented</em> carriers of these exact branches, the list is short and
+      revealing.</p>
+    <div class="gradekey">
+      <span><i class="grade gA">A</i> peer-reviewed remains, or documented pedigree</span>
+      <span><i class="grade gB">B</i> reputable project, one step short</span>
+      <span><i class="grade gC">C</i> unsourced / marketing — discard</span>
     </div>
+    <div class="tblwrap"><table>
+      <thead><tr><th>Named carrier</th><th>When / where</th><th>Line</th><th>Grade</th></tr></thead>
+      <tbody>
+        <tr><td><b>Knez Mirko Radojević</b><br><span style="font-size:.82rem;color:var(--ink-3)">Bosnian magnate under King Tvrtko I</span></td>
+            <td>late 14th c.<br>Kopošići, Bosnia</td><td>Y I2a-Din</td><td><i class="grade gA">A</i>/<i class="grade gB">B</i></td></tr>
+        <tr><td><b>Knez Batić Mirković</b><br><span style="font-size:.82rem;color:var(--ink-3)">his son, knez under Tvrtko II</span></td>
+            <td>d. c. 1430<br>Kopošići, Bosnia</td><td>Y I2a-Din</td><td><i class="grade gA">A</i>/<i class="grade gB">B</i></td></tr>
+        <tr><td><b>Karađorđe Petrović</b><br><span style="font-size:.82rem;color:var(--ink-3)">leader, First Serbian Uprising</span></td>
+            <td>1768–1817<br>Serbia</td><td>Y I2a-CTS10228</td><td><i class="grade gB">B</i></td></tr>
+        <tr><td><b>Živojin Mišić</b><br><span style="font-size:.82rem;color:var(--ink-3)">Serbian field marshal, WWI</span></td>
+            <td>1855–1921<br>Serbia</td><td>Y I2a-CTS10228</td><td><i class="grade gB">B</i></td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin-top:14px;font-size:.92rem;color:var(--ink-2)">The two Bosnian <em>knezovi</em> — father
+      and son, real titled magnates buried under carved <em>stećak</em> tombstones — are the strongest
+      documented noble case that exists for this paternal branch. The haplogroup is predicted from Y-STRs
+      rather than SNP-tested, so it is graded A for the identification, B for the call. The two Serbian
+      figures come from a respected volunteer project (the Serbian DNA Project), not a journal — hence B.
+      Notice what they share: <strong>all four are of this Eastern/Balkan world, all military or political,
+      none cultural.</strong></p>
 
-    <h3 style="margin-top:34px">Paternal &mdash; how I2 was reached</h3>
-    <div class="tblwrap">
-      <table>
-        <thead><tr><th>Marker</th><th>rsid</th><th>Your call</th><th>State</th><th>What it establishes</th></tr></thead>
-        <tbody>
-          <tr><td>M170</td><td class="mono">14847792</td><td class="mono">C</td><td class="drv">derived &times;80</td><td>Haplogroup <b>I</b></td></tr>
-          <tr><td>M438, L68</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td><td class="drv">derived &times;2</td><td>Subclade <b>I2</b></td></tr>
-          <tr><td>L460</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td><td class="drv">derived</td><td>Subclade <b>I2a</b></td></tr>
-          <tr><td>CTS176</td><td class="mono">2785672</td><td class="mono">G</td><td class="drv">derived</td><td>Branch <b>I2a1b</b> (I&#8209;M423)</td></tr>
-          <tr><td>CTS1293</td><td class="mono">7317227</td><td class="mono">A</td><td class="drv">derived</td><td>Branch <b>I2a1b</b>, confirming</td></tr>
-          <tr><td>CTS5375</td><td class="mono">16233135</td><td class="mono">G</td><td class="drv">derived</td><td>Branch <b>I2a1b</b>, third marker</td></tr>
-          <tr><td>CTS5985</td><td class="mono">16594452</td><td class="mono">G</td><td class="drv">derived</td><td>Branch <b>I2a1b</b>, fourth marker</td></tr>
-          <tr><td>M436</td><td class="mono">18747493</td><td class="mono">G</td><td class="anc">ancestral &times;6</td><td><b>Excludes I2a2</b> &mdash; the branch containing M223</td></tr>
-          <tr><td>I1 node</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td><td class="anc">ancestral &times;16</td><td>Excludes I1</td></tr>
-          <tr><td>M26 node</td><td class="mono">&mdash;</td><td class="mono">&mdash;</td><td class="anc">ancestral</td><td>Excludes I2a1a (Sardinian)</td></tr>
-        </tbody>
-      </table>
-    </div>
+    <div class="caveat"><p><strong>Claims to throw away.</strong> The internet attaches this paternal line
+      to <b>Nikola Tesla</b> — false; he was cremated, and a documented Tesla relative tests R1a. And to
+      <b>Martin Luther</b> — surname-matching and commercial marketing, no verified descendant. The one
+      time U5b touches a named king in the literature — a mummified head attributed to <b>Henri IV of
+      France</b> — the relic was later refuted as a misidentification. None of these survives scrutiny.</p></div>
+  </section>
 
-    <div class="caveat">
-      <p>
-        <strong>How the sub&#8209;branch was resolved.</strong> The paternal call comes from <b>yhaplo</b> (23andMe&rsquo;s open&#8209;source caller) walking the full ISOGG tree across 3,741 Y markers. yhaplo expects GRCh37 while this file reports Y positions on <b>GRCh38</b>, so every coordinate was lifted with the UCSC hg38&rarr;hg19 chain rather than shifted by a constant &mdash; the offset is <em>not</em> constant (2,111,934 at one marker, 2,111,880 at another). It was checked against a known address: M170 lands on 14,847,792, exactly its dbSNP GRCh37 position, and 0 of 3,741 markers failed to map.
-      </p>
-      <p>The call is <b>I2a1b (I&#8209;M423)</b> on four derived markers, with the northwest&#8209;European <b>I2a2/M223</b> branch <em>positively excluded</em> by six ancestral markers &mdash; not merely unobserved. <strong>One limit remains:</strong> <b>CTS10228</b>, the marker of the Slavic &ldquo;Din&rdquo; expansion, is not assayed on this chip at all &mdash; zero calls either way. M423 is settled; whether it sits in the large Slavic sub&#8209;branch or the small British &ldquo;Isles&rdquo; one is not.
-      </p>
-    </div>
+  <!-- ============ 3 · ARISTOCRATS ============ -->
+  <section class="sec" id="nobles">
+    <div class="sec-head"><span class="sec-num">03 · WERE THERE ARISTOCRATS?</span></div>
+    <h2>One real noble house — and no crown</h2>
+    <p>The honest answer: <strong>no reigning dynasty sits on either of your lines.</strong> Every royal
+      house with actual DNA evidence resolves elsewhere — the Rurikids of Russia are N1a, the Árpáds of
+      Hungary R1a, the Bourbons of France R1b, England's Richard III haplogroup G. The rumoured
+      Karađorđević and Obrenović royal attributions are unsourced.</p>
+    <p>What you <em>do</em> have is genuine lesser nobility: the <strong>Radojević–Mirković knezovi of
+      Bosnia</strong>. Not kings — regional magnates, the Balkan equivalent of a titled baronial family,
+      sworn men of the Kotromanić crown. That is a real, documented aristocratic connection on your
+      paternal branch, and it is more than most lineages can show.</p>
 
-    <div class="caveat">
-      <p>
-        <strong>What this is not.</strong> This is not an admixture estimate. Percentages like
-        &ldquo;38% Baltic, 12% Finnish&rdquo; require comparing you against reference population panels,
-        which this file alone cannot support &mdash; so none appear here. Haplogroups also trace only
-        <em>two</em> lines out of the thousands of ancestors you had 300 years ago: your mother&rsquo;s
-        mother&rsquo;s mother, and your father&rsquo;s father&rsquo;s father. They are precise, and they are narrow.
-      </p>
+    <div class="imagined">
+      <p><span class="em">Kopošići, above the Bosna valley, in the reign of Tvrtko.</span> The seat is not a
+        French château but a <strong>kula</strong> — a square stone tower-house of the Dinaric lords, walls
+        a metre thick, narrow windows set high, a timber gallery under the eaves. Below it the household's
+        gathered dead lie beneath <strong>stećci</strong>: great limestone slabs and gabled chests carved
+        with spirals, vine-scrolls, a raised hand, a hunt, a circle-dance of figures with joined arms. When
+        Knez Mirko was laid there they wrapped him in a gilded silver funerary mantle — it survives, in the
+        National Museum in Sarajevo, beside the famous Haggadah.</p>
+      <p>No coat of arms is recorded for this particular house, so none is invented here. The Kotromanić
+        kingdom they served bore a <em>bend</em> — a diagonal band — and a crowned arm with a sword; the
+        great Bosnian families carried variations of shield, crescent and star. Picture Mirko's banner among
+        them at Tvrtko's court, and you are within the range of the plausible — but this paragraph is
+        <strong>historical reconstruction of his world, not a record of your descent.</strong> You share his
+        paternal branch. Whether you share his particular family, the DNA cannot say.</p>
     </div>
+  </section>
+
+  <!-- ============ 4 · CULTURAL FIGURES ============ -->
+  <section class="sec" id="culture">
+    <div class="sec-head"><span class="sec-num">04 · GREAT MINDS?</span></div>
+    <h2>The eloquent silence</h2>
+    <p>You asked whether any outstanding physicians, philosophers, scientists, artists, architects or
+      engineers shared these lines. I went looking hard, and the answer is itself the finding:
+      <strong>not one, at reliable evidence.</strong> Wikipedia's list of historic people's haplogroups
+      contains <em>zero</em> U5 entries of any kind, and a single I2a1b entry that collapses on inspection.</p>
+    <p>This absence is <strong>structural, not a gap in the search.</strong> To document a historical
+      person's haplogroup you need either their studied remains or an unbroken pedigree to a living
+      descendant — and both have been lavished on Western European royalty and the canonical composers,
+      exactly the populations where these two branches are <em>rarest</em>. The Balkans, where your paternal
+      line peaks, has had almost no elite-remains genomics. The silence is about who gets studied, not about
+      the worth of the line.</p>
+    <p>The contrast is sharp when you line up the cultural figures who <em>have</em> been tested — every one
+      lands on a different branch:</p>
+    <div class="tblwrap"><table>
+      <thead><tr><th>Figure</th><th>Their haplogroup</th><th>On your line?</th></tr></thead>
+      <tbody>
+        <tr><td>Ludwig van Beethoven</td><td class="mono">Y I1-Z139 · mt H1b1</td><td class="anc">No — I1, the opposite branch of I</td></tr>
+        <tr><td>Nicolaus Copernicus</td><td class="mono">mt H</td><td class="anc">No</td></tr>
+        <tr><td>Leonardo da Vinci</td><td class="mono">Y E1b1b <span style="color:var(--ink-3)">(provisional)</span></td><td class="anc">No</td></tr>
+        <tr><td>Thomas Jefferson</td><td class="mono">Y T-M184</td><td class="anc">No</td></tr>
+        <tr><td>Richard III of England</td><td class="mono">mt J1c2c3 · Y G</td><td class="anc">No</td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin-top:14px;font-size:.92rem;color:var(--ink-2)">Read it the other way and it is rather
+      fine: your lines are not those of the crowned and the catalogued. They are the deep-rooted European
+      substrate — the hunter-gatherers who were already here, and the peoples who remade the east in the
+      Middle Ages. A different kind of ancestry, older than any dynasty.</p>
+  </section>
+
+  <!-- ============ 5 · LAST 100 YEARS ============ -->
+  <section class="sec" id="now">
+    <div class="sec-head"><span class="sec-num">05 · THE LAST 100 YEARS</span></div>
+    <h2>Your nearest living relatives</h2>
+    <p>Where do people carrying your two lines cluster <em>today</em>? Two very different corners of Europe —
+      one for each line. <span style="color:var(--ink-3)">(These are population frequencies from published
+      genetics; they describe who carries the branch, not a personal match. Percentages are approximate and
+      vary between studies.)</span></p>
+
+    <div class="freq">
+      <div class="lab" style="margin-bottom:8px">Paternal I2a-Dinaric (CTS10228) — share of men</div>
+      <div class="row"><span class="nm">Herzegovina (region)</span><span class="bar"><i class="fill" style="width:78%;--c:var(--glacier)"></i></span><span class="pct">~65–71%</span></div>
+      <div class="row"><span class="nm">Bosnian Croats</span><span class="bar"><i class="fill" style="width:73%;--c:var(--glacier)"></i></span><span class="pct">~64–73%</span></div>
+      <div class="row"><span class="nm">Dalmatia (Croatia)</span><span class="bar"><i class="fill" style="width:60%;--c:var(--glacier)"></i></span><span class="pct">~50–65%</span></div>
+      <div class="row"><span class="nm">Serbia</span><span class="bar"><i class="fill" style="width:42%;--c:var(--glacier)"></i></span><span class="pct">~37–42%</span></div>
+      <div class="row"><span class="nm">Belarus / W. Ukraine</span><span class="bar"><i class="fill" style="width:22%;--c:var(--glacier)"></i></span><span class="pct">~18–22%</span></div>
+      <div class="row"><span class="nm">Poland</span><span class="bar"><i class="fill" style="width:12%;--c:var(--glacier)"></i></span><span class="pct">~9–10%</span></div>
+    </div>
+    <p style="font-size:.8rem;color:var(--ink-3);margin:4px 0 0">Herzegovina and the Bosnian-Croat highlands
+      hold the world peak for this paternal line. Modern Croatia is ~39% haplogroup I2a overall.</p>
+
+    <div class="freq" style="margin-top:26px">
+      <div class="lab" style="margin-bottom:8px">Maternal U5 / U5b — share of maternal lines</div>
+      <div class="row"><span class="nm">Sami (N. Scandinavia)</span><span class="bar"><i class="fill" style="width:52%;--c:var(--ochre)"></i></span><span class="pct">~40–48%</span></div>
+      <div class="row"><span class="nm">Finns / Karelians</span><span class="bar"><i class="fill" style="width:22%;--c:var(--ochre)"></i></span><span class="pct">~20%</span></div>
+      <div class="row"><span class="nm">Basques</span><span class="bar"><i class="fill" style="width:15%;--c:var(--ochre)"></i></span><span class="pct">~13%</span></div>
+      <div class="row"><span class="nm">Estonia / Lithuania</span><span class="bar"><i class="fill" style="width:12%;--c:var(--ochre)"></i></span><span class="pct">~10%</span></div>
+    </div>
+    <p style="font-size:.8rem;color:var(--ink-3);margin:4px 0 0">U5b's specifically northern peak is the Sami
+      (much of it U5b1b1); U5 as a whole is scattered thinly across all of Europe.</p>
+
+    <h3 style="margin-top:40px">The two peoples, drawn</h3>
+    <p>If you wanted to stand among the largest living concentrations of your paternal and maternal
+      relatives, you would go to two very different places. <span style="color:var(--ink-3)">The costume,
+      dwelling and object drawings below are general ethnographic depictions of these cultures, not claims
+      about your family.</span></p>
+
+    <div class="cult">
+      <div class="col" style="--c:var(--glacier)">
+        <h3>The paternal peak — the Dinaric South Slavs</h3>
+        <p class="lng"><b>Peoples:</b> Bosnians, Croats, Serbs, Montenegrins &nbsp;·&nbsp;
+          <b>Language:</b> Bosnian/Croatian/Serbian/Montenegrin (BCMS) &nbsp;·&nbsp;
+          <b>Family:</b> South Slavic → Slavic → Indo-European</p>
+
+        <svg viewBox="0 0 320 200" role="img" aria-label="A Dinaric man and woman in folk costume">
+          <g transform="translate(80,20)">
+            <ellipse cx="0" cy="150" rx="34" ry="8" fill="rgba(0,0,0,.10)"/>
+            <path d="M-16 148 q-8 2 -10 -3 q6 -6 12 -5z M16 148 q8 2 10 -3 q-6 -6 -12 -5z" fill="#6B4E33"/>
+            <path d="M-13 96 l-4 52 h11 l6 -40 l6 40 h11 l-4 -52z" fill="#EFE9DC" stroke="#C9BAA2" stroke-width="1"/>
+            <path d="M-16 92 h32 v9 h-32z" fill="#B4531F"/>
+            <path d="M-18 54 q18 -10 36 0 l2 40 h-40z" fill="#2C3540"/>
+            <path d="M-2 54 v40" stroke="#C99A2E" stroke-width="1.4"/>
+            <circle cx="-9" cy="66" r="1.6" fill="#C99A2E"/><circle cx="-9" cy="76" r="1.6" fill="#C99A2E"/>
+            <circle cx="7" cy="66" r="1.6" fill="#C99A2E"/><circle cx="7" cy="76" r="1.6" fill="#C99A2E"/>
+            <circle cx="0" cy="40" r="13" fill="#C69B72"/>
+            <path d="M-14 34 q14 -12 28 0 q-4 -3 -14 -3 q-10 0 -14 3z" fill="#3A4048"/>
+            <path d="M-14 34 h28 v3 h-28z" fill="#2C3038"/>
+            <path d="M-4 46 q4 3 8 0" stroke="#6B4E33" stroke-width="1.2" fill="none"/>
+          </g>
+          <g transform="translate(210,20)">
+            <ellipse cx="0" cy="150" rx="36" ry="8" fill="rgba(0,0,0,.10)"/>
+            <path d="M-24 96 l-6 52 h60 l-6 -52z" fill="#E8E0D0" stroke="#C9BAA2" stroke-width="1"/>
+            <path d="M-18 100 v46 M-6 100 v48 M6 100 v48 M18 100 v46" stroke="#C9BAA2" stroke-width=".8"/>
+            <path d="M-14 98 h28 l-2 42 h-24z" fill="#8C2F24"/>
+            <path d="M-10 106 l10 8 l10 -8 M-10 120 l10 8 l10 -8" stroke="#E8C24A" stroke-width="1.4" fill="none"/>
+            <path d="M-12 132 h24" stroke="#2C5A6E" stroke-width="2"/>
+            <path d="M-16 56 q16 -9 32 0 l3 42 h-38z" fill="#F4EEDF"/>
+            <path d="M-16 56 q-2 20 0 42 l-14 0 z" fill="#7A1F1A"/>
+            <path d="M16 56 q2 20 0 42 l14 0 z" fill="#7A1F1A"/>
+            <circle cx="-20" cy="70" r="1.4" fill="#E8C24A"/><circle cx="-20" cy="80" r="1.4" fill="#E8C24A"/>
+            <circle cx="20" cy="70" r="1.4" fill="#E8C24A"/><circle cx="20" cy="80" r="1.4" fill="#E8C24A"/>
+            <circle cx="0" cy="42" r="13" fill="#D6AC86"/>
+            <path d="M-13 40 q13 -16 26 0 z" fill="#B4231C"/>
+            <circle cx="-8" cy="30" r="1.5" fill="#E8C24A"/><circle cx="0" cy="27" r="1.5" fill="#E8C24A"/><circle cx="8" cy="30" r="1.5" fill="#E8C24A"/>
+            <path d="M-13 42 q-3 10 -2 18 M13 42 q3 10 2 18" stroke="#6B4030" stroke-width="2.5" fill="none"/>
+          </g>
+        </svg>
+        <p style="font-size:.82rem;margin:.2em 0 0">Men: white homespun, a woven red <em>sash</em>, a dark
+          embroidered jacket, the soft <em>šajkača</em> cap, leather <em>opanci</em> with upturned toes.
+          Women: a pleated linen shift, an embroidered <em>jelek</em> vest, a woven wool apron in geometric
+          reds and golds, a coin-hung cap.</p>
+
+        <svg viewBox="0 0 320 180" role="img" aria-label="A Dinaric kula stone tower-house">
+          <g transform="translate(110,14)">
+            <rect x="0" y="30" width="80" height="120" fill="#B7AC97" stroke="#7A6E58" stroke-width="1.5"/>
+            <g stroke="#93876E" stroke-width=".7">
+              <line x1="0" y1="50" x2="80" y2="50"/><line x1="0" y1="70" x2="80" y2="70"/>
+              <line x1="0" y1="90" x2="80" y2="90"/><line x1="0" y1="110" x2="80" y2="110"/>
+              <line x1="0" y1="130" x2="80" y2="130"/>
+              <line x1="27" y1="30" x2="27" y2="150"/><line x1="53" y1="30" x2="53" y2="150"/>
+            </g>
+            <rect x="12" y="44" width="6" height="12" fill="#2C3038"/>
+            <rect x="62" y="44" width="6" height="12" fill="#2C3038"/>
+            <rect x="34" y="70" width="7" height="14" fill="#2C3038"/>
+            <rect x="12" y="98" width="6" height="12" fill="#2C3038"/>
+            <rect x="62" y="98" width="6" height="12" fill="#2C3038"/>
+            <rect x="-8" y="24" width="96" height="8" fill="#6B4E33"/>
+            <path d="M-8 24 l-2 -4 h100 l-2 4z" fill="#7A5A3C"/>
+            <path d="M-14 24 L40 -2 L94 24 Z" fill="#5A4636" stroke="#3E2F24" stroke-width="1"/>
+            <path d="M32 150 v-20 q8 -8 16 0 v20z" fill="#4A3524"/>
+          </g>
+        </svg>
+        <p style="font-size:.82rem;margin:.2em 0 .4em">The <em>kula</em>: a square stone tower-house, thick
+          walls, tiny defensive windows, a timber gallery beneath a low hipped roof — a fortified home for a
+          land of feud and frontier.</p>
+
+        <div class="obj">
+          <svg viewBox="0 0 88 88" aria-label="A gusle, a one-stringed bowed instrument">
+            <ellipse cx="44" cy="60" rx="20" ry="24" fill="#7A5A3C" stroke="#4A3524" stroke-width="1.5"/>
+            <ellipse cx="44" cy="60" rx="11" ry="14" fill="#5A4636"/>
+            <rect x="41" y="8" width="6" height="44" fill="#6B4E33"/>
+            <path d="M44 8 q-8 -4 -6 4 q6 0 6 -4z" fill="#4A3524"/>
+            <line x1="44" y1="10" x2="44" y2="80" stroke="#E8E0D0" stroke-width="1"/>
+            <path d="M30 40 l28 8" stroke="#8A6A44" stroke-width="2"/>
+          </svg>
+          <p>The <em>gusle</em>: a single horsehair string over a carved maple bowl, bowed while reciting
+            epic poetry — the instrument of the Dinaric bard, unchanged for centuries.</p>
+        </div>
+      </div>
+
+      <div class="col" style="--c:var(--ochre)">
+        <h3>The maternal peak — the Sami of the North</h3>
+        <p class="lng"><b>People:</b> the Sami (Sápmi: N. Norway, Sweden, Finland, Kola) &nbsp;·&nbsp;
+          <b>Language:</b> the Sami languages &nbsp;·&nbsp;
+          <b>Family:</b> Uralic — <em>unrelated</em> to the Indo-European paternal side</p>
+
+        <svg viewBox="0 0 320 200" role="img" aria-label="A Sami man and woman in the gákti">
+          <g transform="translate(80,20)">
+            <ellipse cx="0" cy="150" rx="32" ry="8" fill="rgba(0,0,0,.10)"/>
+            <path d="M-12 140 q-6 8 -14 8 v-4 q6 -2 8 -8z M12 140 q6 8 14 8 v-4 q-6 -2 -8 -8z" fill="#6B4E33"/>
+            <path d="M-18 52 q18 -10 36 0 l4 60 q-22 8 -44 0z" fill="#274A8C"/>
+            <path d="M-22 104 q22 8 44 0 l0 5 q-22 8 -44 0z" fill="#C4302B"/>
+            <path d="M-21 110 q21 7 42 0 l0 3 q-21 7 -42 0z" fill="#E8C24A"/>
+            <path d="M-14 60 h28 M-14 68 h28" stroke="#E8C24A" stroke-width="2"/>
+            <path d="M-14 64 h28" stroke="#C4302B" stroke-width="2"/>
+            <path d="M-19 88 h40 v5 h-40z" fill="#7A1F1A"/>
+            <circle cx="0" cy="40" r="12" fill="#D6B08A"/>
+            <path d="M-11 34 q11 -10 22 0 z" fill="#274A8C"/>
+            <path d="M0 34 l0 -18 l8 4 l-8 4" fill="#C4302B" stroke="#274A8C" stroke-width="1"/>
+            <circle cx="0" cy="14" r="3.5" fill="#E8C24A"/>
+          </g>
+          <g transform="translate(210,20)">
+            <ellipse cx="0" cy="150" rx="34" ry="8" fill="rgba(0,0,0,.10)"/>
+            <path d="M-12 140 q-6 8 -14 8 v-4 q6 -2 8 -8z M12 140 q6 8 14 8 v-4 q-6 -2 -8 -8z" fill="#6B4E33"/>
+            <path d="M-20 52 q20 -10 40 0 l7 88 q-27 9 -54 0z" fill="#2A5099"/>
+            <path d="M-26 130 q26 9 52 0 l0 6 q-26 9 -52 0z" fill="#C4302B"/>
+            <path d="M-25 137 q25 8 50 0 l0 3 q-25 8 -50 0z" fill="#E8C24A"/>
+            <path d="M-14 60 h28 M-14 70 h28" stroke="#E8C24A" stroke-width="2"/>
+            <path d="M-14 65 h28" stroke="#C4302B" stroke-width="2"/>
+            <path d="M-9 52 q9 6 18 0 l0 6 q-9 5 -18 0z" fill="#C4302B"/>
+            <circle cx="0" cy="55" r="2" fill="#E8C24A"/>
+            <circle cx="0" cy="40" r="12" fill="#E0BE98"/>
+            <path d="M-11 36 q11 -12 22 0 z" fill="#C4302B"/>
+            <path d="M-11 34 q0 -14 11 -14 q11 0 11 14 z" fill="#C4302B" stroke="#7A1F1A" stroke-width="1"/>
+          </g>
+        </svg>
+        <p style="font-size:.82rem;margin:.2em 0 0">The <em>gákti</em>: a deep-blue wool tunic or dress
+          banded in red and yellow at hem, cuffs and collar, cinched with a worked belt, over reindeer-hide
+          boots. The men's <em>four-winds hat</em> and the women's red bonnet are the signatures.</p>
+
+        <svg viewBox="0 0 320 180" role="img" aria-label="A Sami lavvu tent">
+          <g transform="translate(160,150)">
+            <ellipse cx="0" cy="0" rx="96" ry="10" fill="rgba(0,0,0,.10)"/>
+            <path d="M-78 0 L0 -128 L78 0 Z" fill="#B8A98E" stroke="#7A6E58" stroke-width="1.5"/>
+            <path d="M-78 0 L0 -128 L-30 0 Z" fill="#A99A80"/>
+            <g stroke="#5A4636" stroke-width="1.6">
+              <line x1="0" y1="-128" x2="-14" y2="-150"/><line x1="0" y1="-128" x2="0" y2="-152"/>
+              <line x1="0" y1="-128" x2="14" y2="-150"/><line x1="0" y1="-128" x2="-6" y2="-151"/>
+              <line x1="0" y1="-128" x2="7" y2="-151"/>
+            </g>
+            <path d="M-16 0 L0 -52 L16 0 Z" fill="#6B4E33"/>
+            <path d="M2 -150 q10 -12 -2 -22 q12 -10 2 -22" stroke="rgba(140,140,140,.5)" stroke-width="2.5" fill="none"/>
+          </g>
+        </svg>
+        <p style="font-size:.82rem;margin:.2em 0 .4em">The <em>lavvu</em>: a portable conical tent of poles
+          and cloth (once reindeer hide), built to shrug off Arctic wind and strike in minutes — the home
+          of a people who followed the herds.</p>
+
+        <div class="obj">
+          <svg viewBox="0 0 88 88" aria-label="A Sami noaidi drum">
+            <ellipse cx="44" cy="44" rx="30" ry="24" fill="#D8C7A6" stroke="#6B4E33" stroke-width="2.5"/>
+            <ellipse cx="44" cy="44" rx="30" ry="24" fill="none" stroke="#8A6A44" stroke-width="1"/>
+            <line x1="20" y1="44" x2="68" y2="44" stroke="#7A1F1A" stroke-width="1.2"/>
+            <path d="M44 30 v28 M34 36 l20 16 M54 36 l-20 16" stroke="#7A1F1A" stroke-width="1"/>
+            <circle cx="44" cy="44" r="3" fill="#7A1F1A"/>
+            <path d="M26 32 l-2 -4 M62 32 l2 -4" stroke="#7A1F1A" stroke-width="1"/>
+          </svg>
+          <p>The <em>goavddis</em> (noaidi drum): a shallow bowl or frame of birch, its reindeer-skin head
+            painted with sun, herds and spirits — struck by the <em>noaidi</em> to travel between worlds.</p>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:22px;font-size:.92rem;color:var(--ink-2)">These two peoples could hardly be more
+      different — a South Slavic, Indo-European, highland world, and a Uralic, reindeer-herding Arctic one —
+      and they do not descend from each other. That is exactly the point of two independent lines: your
+      father's fathers and your mother's mothers walked out of the same Ice Age into utterly different
+      destinies.</p>
+  </section>
+
+  <!-- ============ HONEST LIMITS ============ -->
+  <section class="sec" id="honest">
+    <div class="sec-head"><span class="sec-num">·  WHAT THIS IS — AND IS NOT</span></div>
+    <div class="caveat"><p><strong>Two lines, not a family tree.</strong> Haplogroups trace only your
+      mother's-mother's-mother line and your father's-father's-father line. Ten generations back you had
+      ~1,024 ancestors; these two describe two of those paths. Everyone named here who "shares" a line is a
+      relative <em>on that one line</em> — a common ancestor far back — never a proven ancestor of yours.</p></div>
+    <div class="caveat"><p><strong>No admixture percentages appear here.</strong> "38% Baltic, 12% Finnish"
+      needs comparison against reference population panels, which a raw genotype file alone cannot support —
+      so I have not invented any. The frequencies in §5 describe <em>populations</em>, not a personal match.</p></div>
+    <div class="caveat"><p><strong>How the paternal branch was resolved.</strong> The call used
+      <b>yhaplo</b> across 3,741 Y markers, with every coordinate lifted GRCh38→GRCh37 through the UCSC chain
+      (the offset is not constant, so a flat shift would mis-call it) and checked against a known address.
+      Result: <b>I2a1b (I-M423)</b>, with I2a2/M223 excluded by six ancestral markers. The Slavic "Din"
+      marker CTS10228 itself is not on this chip, so placement <em>within</em> M423 is not fully settled —
+      one downstream twig (S17250) is excluded, Din membership remains open.</p></div>
   </section>
 
   <footer>
-    <p>
-      Read from 579,517 markers &mdash; 875 mitochondrial, 3,751 Y&#8209;chromosome. Sex confirmed male:
-      23,063 of 23,724 X&#8209;chromosome calls are haploid, the remaining 661 falling in the
-      pseudoautosomal regions, exactly as expected. Marker identities verified against dbSNP and SNPedia;
-      ancient&#8209;genome haplogroups from the published literature on Cheddar Man (Natural History Museum,
-      2018), La Bra&ntilde;a&#8209;Arintero, Loschbour and Djehutynakht. Portraits are stylised
-      illustrations, not likenesses.
-    </p>
+    <p><strong>Sources &amp; method.</strong> Haplogroup calls: mtDNA by diagnostic rCRS positions, Y by
+      yhaplo on the ISOGG tree. Ancient genomes from the primary literature (Cheddar Man — NHM 2018;
+      Loschbour &amp; La Braña — Lazaridis 2014, Olalde 2014; Djehutynakht — 2018). Paternal dating and the
+      Slavic-expansion debate from Fóthi 2020, Neparáczki 2019, Olalde 2023 (Cell), Gretzinger 2025 (Nature)
+      and Kushniarevich 2015. Carrier evidence graded A/B/C; the two Bosnian knezovi from Džehverović et al.
+      2021. Population frequencies from the I2a/U5 literature (Rootsi, Peričić, Battaglia, Achilli, Tambets);
+      figures are approximate and vary between studies. Costume, architecture and object drawings are general
+      ethnographic depictions, not documentation of any specific family. Photographs credited on each card;
+      all freely licensed from Wikimedia Commons and used unmodified. Full working:
+      <a href="https://github.com/MihelKlimm/ancestors">github.com/MihelKlimm/ancestors</a>.</p>
   </footer>
 </div>
 
 <script>
 (function(){
   "use strict";
-
-  /* ---------- projection: equirectangular, longitude compressed by cos(lat0) ---------- */
   var W=1000,H=660, LON0=-13,LON1=47, LAT0=34.5,LAT1=72, K=Math.cos(53*Math.PI/180);
   function px(lon){ return (lon-LON0)*K/((LON1-LON0)*K)*W; }
   function py(lat){ return H-(lat-LAT0)/(LAT1-LAT0)*H; }
   function P(p){ return px(p[1])+","+py(p[0]); }
-  function path(pts){ return pts.map(P).join(" "); }
-
+  function pathd(pts){ return pts.map(P).join(" "); }
   var NS="http://www.w3.org/2000/svg";
   function el(n,a){ var e=document.createElementNS(NS,n); for(var k in a) e.setAttribute(k,a[k]); return e; }
   var svg=document.getElementById("map");
+  if(!svg) return;
 
-  /* ---------- schematic coastlines, [lat,lon] ---------- */
-  var mainland=[
-    [36.0,-5.6],[37.0,-8.9],[38.7,-9.4],[41.1,-8.7],[43.5,-8.3],[43.5,-5.0],[43.4,-1.8],
-    [45.6,-1.1],[47.3,-2.2],[48.6,-4.7],[48.8,-1.6],[49.9,1.1],[51.0,2.5],[51.9,4.2],
-    [53.4,6.9],[53.9,8.6],[55.4,8.3],[57.6,9.9],[56.5,10.6],[54.4,11.0],[54.1,13.5],
-    [54.4,18.6],[55.7,21.1],[57.0,22.0],[58.4,24.0],[59.4,28.0],[60.0,30.3],[61.7,30.0],
-    [63.0,29.5],[65.0,29.8],[66.5,29.5],[68.9,28.4],[69.7,30.9],[68.0,38.0],[66.3,34.5],
-    [65.0,36.5],[64.5,40.5],[66.0,44.0],[67.8,44.0],[68.2,50.0],[68.0,55.0],[66.0,60.0],
-    [62.0,60.0],[58.0,59.0],[55.0,58.0],[52.0,55.0],[48.5,49.0],[46.5,47.5],[45.5,44.0],
-    [45.0,38.5],[44.5,34.0],[46.0,32.0],[45.3,29.7],[44.2,28.6],[42.5,27.9],[41.0,29.0],
-    [40.5,26.2],[39.0,26.5],[37.0,24.0],[36.5,22.5],[38.0,21.0],[39.5,20.0],[41.8,19.4],
-    [43.5,15.9],[45.3,13.6],[45.5,12.3],[44.0,12.4],[42.0,14.5],[40.0,18.0],[38.0,15.6],
-    [40.0,15.0],[41.5,12.3],[43.9,10.0],[44.4,8.8],[43.5,7.0],[43.2,5.4],[42.5,3.2],
-    [40.5,0.9],[38.5,-0.5],[36.7,-2.2],[36.0,-5.6]
-  ];
-  var britain=[
-    [50.1,-5.7],[51.2,-4.2],[51.6,-5.3],[53.3,-4.6],[54.7,-3.6],[55.9,-5.0],[57.5,-6.2],
-    [58.6,-5.0],[58.6,-3.0],[57.5,-2.0],[56.0,-2.5],[54.6,-1.1],[53.0,0.3],[52.0,1.7],
-    [51.1,1.4],[50.6,-1.9],[50.1,-5.7]
-  ];
-  var ireland=[
-    [51.5,-9.9],[52.8,-9.9],[54.2,-10.1],[55.3,-7.5],[54.6,-5.6],[53.3,-6.0],[52.2,-6.4],[51.5,-9.9]
-  ];
-  var scandi=[
-    [57.9,11.2],[58.9,10.6],[59.9,10.7],[61.0,5.0],[62.5,5.8],[65.0,12.0],[68.0,15.0],
-    [70.1,20.0],[71.0,25.8],[70.5,29.5],[69.0,27.0],[68.4,23.0],[66.0,23.5],[63.5,20.5],
-    [61.0,17.5],[59.0,18.5],[56.2,15.5],[55.4,13.0],[57.0,12.0],[57.9,11.2]
-  ];
+  var mainland=[[36.0,-5.6],[37.0,-8.9],[38.7,-9.4],[41.1,-8.7],[43.5,-8.3],[43.5,-5.0],[43.4,-1.8],
+    [45.6,-1.1],[47.3,-2.2],[48.6,-4.7],[48.8,-1.6],[49.9,1.1],[51.0,2.5],[51.9,4.2],[53.4,6.9],
+    [53.9,8.6],[55.4,8.3],[57.6,9.9],[56.5,10.6],[54.4,11.0],[54.1,13.5],[54.4,18.6],[55.7,21.1],
+    [57.0,22.0],[58.4,24.0],[59.4,28.0],[60.0,30.3],[61.7,30.0],[63.0,29.5],[65.0,29.8],[66.5,29.5],
+    [68.9,28.4],[69.7,30.9],[68.0,38.0],[66.3,34.5],[65.0,36.5],[64.5,40.5],[66.0,44.0],[67.8,44.0],
+    [68.2,50.0],[68.0,55.0],[66.0,60.0],[62.0,60.0],[58.0,59.0],[55.0,58.0],[52.0,55.0],[48.5,49.0],
+    [46.5,47.5],[45.5,44.0],[45.0,38.5],[44.5,34.0],[46.0,32.0],[45.3,29.7],[44.2,28.6],[42.5,27.9],
+    [41.0,29.0],[40.5,26.2],[39.0,26.5],[37.0,24.0],[36.5,22.5],[38.0,21.0],[39.5,20.0],[41.8,19.4],
+    [43.5,15.9],[45.3,13.6],[45.5,12.3],[44.0,12.4],[42.0,14.5],[40.0,18.0],[38.0,15.6],[40.0,15.0],
+    [41.5,12.3],[43.9,10.0],[44.4,8.8],[43.5,7.0],[43.2,5.4],[42.5,3.2],[40.5,0.9],[38.5,-0.5],
+    [36.7,-2.2],[36.0,-5.6]];
+  var britain=[[50.1,-5.7],[51.2,-4.2],[51.6,-5.3],[53.3,-4.6],[54.7,-3.6],[55.9,-5.0],[57.5,-6.2],
+    [58.6,-5.0],[58.6,-3.0],[57.5,-2.0],[56.0,-2.5],[54.6,-1.1],[53.0,0.3],[52.0,1.7],[51.1,1.4],
+    [50.6,-1.9],[50.1,-5.7]];
+  var ireland=[[51.5,-9.9],[52.8,-9.9],[54.2,-10.1],[55.3,-7.5],[54.6,-5.6],[53.3,-6.0],[52.2,-6.4],[51.5,-9.9]];
+  var scandi=[[57.9,11.2],[58.9,10.6],[59.9,10.7],[61.0,5.0],[62.5,5.8],[65.0,12.0],[68.0,15.0],
+    [70.1,20.0],[71.0,25.8],[70.5,29.5],[69.0,27.0],[68.4,23.0],[66.0,23.5],[63.5,20.5],[61.0,17.5],
+    [59.0,18.5],[56.2,15.5],[55.4,13.0],[57.0,12.0],[57.9,11.2]];
+  var ice=[[52.0,-10.5],[53.5,-6.0],[53.0,0.0],[53.5,7.0],[52.5,13.0],[52.0,20.0],[54.5,27.0],
+    [57.0,33.0],[60.0,40.0],[63.0,48.0],[67.0,52.0],[71.5,50.0],[71.5,-10.5],[52.0,-10.5]];
+  var refuges=[{n:"Franco-Cantabrian",lat:43.2,lon:-2.0,rx:62,ry:34},{n:"Italian",lat:42.6,lon:13.0,rx:40,ry:40},
+    {n:"Balkan",lat:43.0,lon:20.5,rx:44,ry:38},{n:"Pontic-Caspian",lat:47.5,lon:34.0,rx:60,ry:32}];
+  var sites=[{n:"Cheddar Gorge",sub:"U5b1 + I2a",lat:51.28,lon:-2.77,both:true},
+    {n:"La Braña",sub:"U5b2c1",lat:42.90,lon:-5.30},{n:"Loschbour",sub:"U5b1a + I2a-M423",lat:49.78,lon:6.22,both:true},
+    {n:"Villabruna",sub:"U5b2b",lat:46.03,lon:12.05},{n:"Karos (Din elite)",sub:"I2a-L621",lat:48.30,lon:21.25}];
 
-  /* ---------- Last Glacial Maximum ice, approximate southern margin ---------- */
-  var ice=[
-    [52.0,-10.5],[53.5,-6.0],[53.0,0.0],[53.5,7.0],[52.5,13.0],[52.0,20.0],[54.5,27.0],
-    [57.0,33.0],[60.0,40.0],[63.0,48.0],[67.0,52.0],[71.5,50.0],[71.5,-10.5],[52.0,-10.5]
-  ];
-
-  var refuges=[
-    {n:"Franco-Cantabrian",  lat:43.2, lon:-2.0, rx:62, ry:34},
-    {n:"Italian",            lat:42.6, lon:13.0, rx:40, ry:40},
-    {n:"Balkan",             lat:43.0, lon:20.5, rx:44, ry:38},
-    {n:"Pontic-Caspian",     lat:47.5, lon:34.0, rx:60, ry:32}
-  ];
-
-  var sites=[
-    {n:"Cheddar Gorge",   sub:"U5b1 + I2a", lat:51.28, lon:-2.77, both:true},
-    {n:"La Braña",   sub:"U5b2c1",     lat:42.90, lon:-5.30},
-    {n:"Loschbour",       sub:"I2a1b",      lat:49.78, lon:6.22},
-    {n:"Villabruna",      sub:"hg I",       lat:46.03, lon:12.05},
-    {n:"Motala",          sub:"U5 + I2",    lat:58.54, lon:15.04}
-  ];
-
-  /* ---------- draw ---------- */
   var defs=el("defs");
-  defs.innerHTML =
-    '<pattern id="hatch" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">'+
+  defs.innerHTML='<pattern id="hatch" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">'+
     '<line x1="0" y1="0" x2="0" y2="7" stroke="rgba(180,83,31,.34)" stroke-width="2.4"/></pattern>'+
     '<marker id="arw" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">'+
     '<path d="M0,0.6 L10,5 L0,9.4 z" fill="context-stroke"/></marker>';
   svg.appendChild(defs);
-
-  // sea
   svg.appendChild(el("rect",{x:0,y:0,width:W,height:H,fill:"rgba(124,151,166,.13)"}));
-
-  // graticule
   var g=el("g",{stroke:"rgba(124,151,166,.30)","stroke-width":.6});
   for(var lat=40;lat<=70;lat+=10){
     g.appendChild(el("line",{x1:0,y1:py(lat),x2:W,y2:py(lat)}));
@@ -375,107 +664,40 @@
   }
   for(var lon=-10;lon<=45;lon+=10){ g.appendChild(el("line",{x1:px(lon),y1:0,x2:px(lon),y2:H})); }
   svg.appendChild(g);
-
-  // land
   [mainland,britain,ireland,scandi].forEach(function(c){
-    svg.appendChild(el("polygon",{points:path(c),fill:"var(--ground-2)",stroke:"var(--rule)","stroke-width":1.1,"stroke-linejoin":"round"}));
+    svg.appendChild(el("polygon",{points:pathd(c),fill:"var(--ground-2)",stroke:"var(--rule)","stroke-width":1.1,"stroke-linejoin":"round"}));
   });
-
-  // ice sheet
-  svg.appendChild(el("polygon",{points:path(ice),fill:"rgba(185,201,210,.55)",stroke:"rgba(124,151,166,.75)","stroke-width":1.2,"stroke-dasharray":"5 4"}));
-  var it=el("text",{x:px(6),y:py(69),fill:"#4E6675","font-size":13,"font-family":"ui-sans-serif,sans-serif","letter-spacing":"2.5"});
-  it.textContent="ICE SHEET · 21,000 BC"; svg.appendChild(it);
-
-  // refuges
+  svg.appendChild(el("polygon",{points:pathd(ice),fill:"rgba(185,201,210,.55)",stroke:"rgba(124,151,166,.75)","stroke-width":1.2,"stroke-dasharray":"5 4"}));
+  var itx=el("text",{x:px(6),y:py(69),fill:"#4E6675","font-size":13,"font-family":"ui-sans-serif,sans-serif","letter-spacing":"2.5"});
+  itx.textContent="ICE SHEET · 21,000 BC"; svg.appendChild(itx);
   refuges.forEach(function(r){
     svg.appendChild(el("ellipse",{cx:px(r.lon),cy:py(r.lat),rx:r.rx,ry:r.ry,fill:"url(#hatch)",stroke:"rgba(180,83,31,.5)","stroke-width":1}));
     var t=el("text",{x:px(r.lon),y:py(r.lat)+r.ry+15,fill:"var(--ochre)","font-size":11,"text-anchor":"middle","font-family":"ui-sans-serif,sans-serif","font-weight":"600"});
     t.textContent=r.n; svg.appendChild(t);
   });
-
-  // routes: refuge -> recolonisation
   function route(pts,color,cls){
     var d="M"+pts.map(function(p){return px(p[1])+" "+py(p[0]);}).join(" L ");
-    var p=el("path",{d:d,fill:"none",stroke:color,"stroke-width":3,"stroke-linecap":"round",
-      "marker-end":"url(#arw)",class:"route "+(cls||"")});
+    var p=el("path",{d:d,fill:"none",stroke:color,"stroke-width":3,"stroke-linecap":"round","marker-end":"url(#arw)",class:"route "+(cls||"")});
     svg.appendChild(p);
     try{ p.style.setProperty("--len", p.getTotalLength()+"px"); }catch(e){}
   }
-  // maternal U5b: Franco-Cantabrian refuge north through Doggerland into Britain & the north
   route([[43.0,-2.5],[45.5,-1.0],[48.5,0.5],[51.0,2.0],[52.5,-0.5],[54.5,-2.0],[57.5,-3.5]],"var(--ochre)");
   route([[43.0,-2.5],[46.5,3.0],[50.5,7.5],[54.0,11.0],[58.0,14.5],[62.0,18.0]],"var(--ochre)","d2");
-  // paternal I2: Balkan & Italian refuges north and east
   route([[43.0,20.5],[46.0,19.0],[49.0,17.5],[51.5,17.0],[54.0,20.0],[56.5,25.0]],"var(--glacier)");
   route([[43.0,20.5],[45.5,24.5],[48.5,29.0],[52.0,33.0],[55.0,36.5]],"var(--glacier)","d2");
-
-  // sites
   sites.forEach(function(s){
-    var x=px(s.lon),y=py(s.lat);
-    var gg=el("g");
+    var x=px(s.lon),y=py(s.lat), gg=el("g");
     gg.appendChild(el("circle",{cx:x,cy:y,r:s.both?8.5:6,fill:s.both?"var(--ochre)":"var(--plate)",
       stroke:s.both?"var(--plate)":"var(--ink)","stroke-width":2}));
     if(s.both) gg.appendChild(el("circle",{cx:x,cy:y,r:14,fill:"none",stroke:"var(--ochre)","stroke-width":1.4,opacity:.65}));
-    var anchor = s.lon>20 ? "end" : "start";
-    var dx = s.lon>20 ? -14 : 14;
+    var anchor=s.lon>20?"end":"start", dx=s.lon>20?-14:14;
     var t1=el("text",{x:x+dx,y:y-1,fill:"var(--ink)","font-size":13,"text-anchor":anchor,"font-weight":"600"});
     t1.textContent=s.n;
     var t2=el("text",{x:x+dx,y:y+13,fill:"var(--ink-3)","font-size":10.5,"text-anchor":anchor,"font-family":"ui-sans-serif,sans-serif"});
     t2.textContent=s.sub;
-    gg.appendChild(t1); gg.appendChild(t2);
-    svg.appendChild(gg);
-  });
-
-  /* ---------- carrier medallions ---------- */
-  var people=[
-    {name:"Cheddar Man", when:"c. 7100 BC · Somerset, England",
-     mt:"U5b1", y:"I2a (I-S2524)", mtM:true, yM:true, skin:"#6B4A38", eye:"#4E7C92",
-     note:"Britain's oldest complete skeleton. Sequenced in 2018: dark skin, blue eyes — and both of your haplogroups."},
-    {name:"La Braña 1", when:"c. 5000 BC · León, Spain",
-     mt:"U5b2c1", y:"C1a2", mtM:true, yM:false, skin:"#6F4E3B", eye:"#4E7C92",
-     note:"The genome that first revealed the hunter-gatherer combination of dark skin with blue eyes."},
-    {name:"Loschbour man", when:"c. 6000 BC · Luxembourg",
-     mt:"U5a", y:"I2a1b", mtM:false, yM:true, skin:"#71513C", eye:"#5D7F6A",
-     note:"A Western Hunter-Gatherer reference genome — and his paternal line is I2a1b, the exact clade called here."},
-    {name:"Djehutynakht", when:"c. 2000 BC · Deir el-Bersha, Egypt",
-     mt:"U5b2b5", y:"—", mtM:true, yM:false, skin:"#8A6242", eye:"#4A3527",
-     note:"An Egyptian governor's mummy carrying a European hunter-gatherer maternal line — a reminder these lineages travelled."}
-  ];
-
-  var host=document.getElementById("carriers");
-  people.forEach(function(p,i){
-    var d=document.createElement("div"); d.className="carrier";
-    var seed=i*37;
-    d.innerHTML=
-      '<svg viewBox="0 0 200 150" aria-hidden="true">'+
-        '<rect width="200" height="150" fill="var(--ground-2)"/>'+
-        '<circle cx="100" cy="150" r="66" fill="'+p.skin+'" opacity=".28"/>'+
-        // head
-        '<ellipse cx="100" cy="74" rx="35" ry="43" fill="'+p.skin+'"/>'+
-        // brow ridge - pronounced, these are robust skulls
-        '<path d="M66 62 q34 -13 68 0 q-8 7 -34 7 q-26 0 -34 -7z" fill="rgba(0,0,0,.22)"/>'+
-        // hair / beard mass
-        '<path d="M64 66 q-4 -40 36 -42 q40 2 36 42 q-9 -24 -36 -24 q-27 0 -36 24z" fill="rgba(20,14,10,.72)"/>'+
-        (i!==3 ? '<path d="M70 96 q30 30 60 0 q-4 30 -30 32 q-26 -2 -30 -32z" fill="rgba(20,14,10,.60)"/>' : '')+
-        // eyes
-        '<ellipse cx="87" cy="74" rx="5.6" ry="4" fill="#F3EADB"/>'+
-        '<ellipse cx="113" cy="74" rx="5.6" ry="4" fill="#F3EADB"/>'+
-        '<circle cx="87" cy="74" r="2.9" fill="'+p.eye+'"/>'+
-        '<circle cx="113" cy="74" r="2.9" fill="'+p.eye+'"/>'+
-        // nose + mouth
-        '<path d="M100 78 l-5 12 q5 3 10 0z" fill="rgba(0,0,0,.20)"/>'+
-        '<path d="M90 100 q10 5 20 0" stroke="rgba(0,0,0,.34)" stroke-width="2.4" fill="none" stroke-linecap="round"/>'+
-        // ochre stripe - the pigment, used as a marker of the ochre line
-        (p.mtM ? '<path d="M'+(72+seed%3)+' 52 q28 -9 56 0" stroke="var(--ochre)" stroke-width="3.4" fill="none" opacity=".95" stroke-linecap="round"/>' : '')+
-      '</svg>'+
-      '<p class="who">'+p.name+'</p>'+
-      '<p class="when">'+p.when+'</p>'+
-      '<p class="hgs"><b>mt</b> <span class="'+(p.mtM?'match':'nomatch')+'">'+p.mt+'</span>'+
-        '&nbsp;&nbsp;<b>Y</b> <span class="'+(p.yM?'match':'nomatch')+'">'+p.y+'</span></p>'+
-      '<p class="note">'+p.note+'</p>';
-    host.appendChild(d);
+    gg.appendChild(t1); gg.appendChild(t2); svg.appendChild(gg);
   });
 })();
 </script>
-
 </body>
 </html>
