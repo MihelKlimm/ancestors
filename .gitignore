@@ -1,0 +1,30 @@
+# ---------------------------------------------------------------------------
+# NEVER COMMIT RAW GENOTYPE DATA.
+#
+# This repository is public. A raw genotype file is identifying, permanent, and
+# partly shared with blood relatives who did not consent to publishing it. The
+# haplogroup CALLS in results/ are fine -- they are two branch labels. The
+# 579,517-marker file they were derived from is not.
+#
+# Keep the raw file outside the repo and pass its path as an argument:
+#     python3 analysis/mt_haplogroup.py ~/private/genome.txt
+# ---------------------------------------------------------------------------
+*.genos.txt
+*.genos.txt.gz
+5111-*.txt
+genome*.txt
+raw*.txt
+*.vcf
+*.vcf.gz
+*.bcf
+
+# Working files
+venv/
+yenv/
+node_modules/
+__pycache__/
+*.pyc
+*.chain
+*.chain.gz
+chain.gz
+.DS_Store
